@@ -1,0 +1,107 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Light grey background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Dark text color */
+}
+
+.App {
+  text-align: left;
+  padding: 40px;
+}
+
+h1 {
+  color: #333; /* Dark grey for the main title */
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product-list, .cart {
+  background-color: #ffffff; /* White background for cards */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border: 1px solid #e0e0e0; /* Light grey border */
+}
+
+h2 {
+  color: #2a9d8f; /* Teal for section headers */
+  margin-bottom: 15px;
+}
+
+.product-card {
+  border: 1px solid #dedede; /* Light grey border for products */
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  background-color: #fafafa; /* Very light grey */
+  color: #555; /* Soft grey for text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle hover shadow */
+  border-color: #2a9d8f; /* Highlight border with teal on hover */
+}
+
+.product-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2a9d8f; /* Teal for product names */
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #777; /* Grey for product details */
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background-color: #e76f51; /* Coral button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #d45a3e; /* Darker coral on hover */
+}
+
+.cart {
+  border: 1px solid #e76f51; /* Coral border for the cart */
+}
+
+.cart p {
+  font-size: 16px;
+  color: #333;
+}
+
+.cart h2 {
+  margin-bottom: 10px;
+}
+
+.cart p span {
+  font-weight: bold;
+  color: #2a9d8f; /* Teal for cart totals */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
